@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+// global scss file
+@import '_myvar';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+
+//overwrite bootstraps variables before calling bootstrap scss in the _myvar
+// use OWN sass after bootstrap import
+a {
+  color: white;
+  background-color: black;
+}
+
+
+
+
+
+
