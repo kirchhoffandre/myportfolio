@@ -2,18 +2,29 @@
 // global scss file
 @import '_myvar';
 @import '../node_modules/bootstrap/scss/bootstrap';
-
+@import url('https://fonts.googleapis.com/css?family=Kosugi');
 
 
 //overwrite bootstraps variables before calling bootstrap scss in the _myvar
 // use OWN sass after bootstrap import
-a {
-  color: white;
-  background-color: black;
+
+// my font
+$text-font: 'Kosugi';
+$text-color: darkgrey;
+
+
+body {
+  font-family: $text-font;
 }
 
 
 
+// my links
+a {
+  background-color: black;
+}
 
-
-
+a:hover {
+  background-color: white;
+  color: $text-color;
+}
